@@ -1,0 +1,18 @@
+[DEFAULT]
+bantime  = 10s
+findtime = 30s
+maxretry = 1
+
+ignoreip = 127.0.0.1
+
+# Advanced parameters
+bantime.increment = true
+
+[sshd]
+enabled = true
+
+[recidive]
+enabled = true
+bantime = -1
+findtime = 1d
+maxretry = {{ max_bans }}

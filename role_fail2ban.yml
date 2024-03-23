@@ -1,0 +1,6 @@
+---
+- name: Installation and configuration fail2ban
+  hosts: all
+
+  roles:
+    - deploy_fail2ban
