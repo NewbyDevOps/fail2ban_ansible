@@ -1,0 +1,10 @@
+---
+# tasks file for installation file2ban to RedHat based OS family
+
+- name: Install fail2ban for RedHat
+  become: yes
+  yum:
+    name: "{{ version_for_fedora }}"     # fail2ban-1.0.2-12.fc39
+    update_cache: yes
+  notify:
+    - Start and enable fail2ban service
