@@ -14,5 +14,5 @@ fail2ban_findtime_recidive: 86400
 fail2ban_maxretry_recidive: 15
 
 #defaults vars for install
-fail2ban_ver_for_ubuntu: fail2ban=0.11.2-6
-fail2ban_ver_for_fedora: fail2ban-1.0.2-12.fc39
+fail2ban_ver_for_ubuntu: 0.11.2-6
+fail2ban_ver_for_fedora: 1.0.2-12.fc39

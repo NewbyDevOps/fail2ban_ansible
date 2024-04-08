@@ -1,8 +1,5 @@
 ---
-# tasks file for fail2ban
-
-- name: Check and Print LINUX Version
-  debug: var=ansible_os_family
+# Tasks file for fail2ban
 
 - include_tasks: install_for_redhat.yml
   when: ansible_os_family == "RedHat"

@@ -11,8 +11,10 @@ bantime.increment = {{ bantime_increment_d }}
 [sshd]
 enabled = {{ fail2ban_enabled_sshd }}
 
+{% if enabled_recidive == true %}
 [recidive]
-enabled = {{ enabled_recidive }}
+enabled = true
 bantime = {{ bantime_recidive }}
 findtime = {{ findtime_recidive }}
 maxretry = {{ maxretry_recidive }}
+{% endif %}

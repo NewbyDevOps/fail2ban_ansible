@@ -1,4 +1,5 @@
 ---
+# Vars for config fail2ban
 bantime_d: "{{ fail2ban_bantime_d }}"
 findtime_d: "{{ fail2ban_findtime_d }}"
 maxretry_d: "{{ fail2ban_maxretry_d }}"
@@ -7,8 +8,11 @@ bantime_increment_d: "{{ fail2ban_bantime_increment_d }}"
 
 enabled_sshd: "{{ fail2ban_enable_sshd }}"
 
-enabled_recidive: "{{ fail2ban_enabled_recidive }}"
+enabled_recidive: false
 bantime_recidive: "{{ fail2ban_bantime_recidive }}"
 findtime_recidive: "{{ fail2ban_findtime_recidive }}"
 maxretry_recidive: "{{ fail2ban_maxretry_recidive }}"
 
+# Vars for instaling fail2ban
+version_for_ubuntu: "{{ fail2ban_ver_for_ubuntu }}"
+version_for_fedora: "{{ fail2ban_ver_for_fedora }}"

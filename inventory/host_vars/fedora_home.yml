@@ -1,7 +1,6 @@
 ---
 
 ansible_user: max
-ansible_ssh_private_key_file: /root/.ssh/id_rsa
 ansible_sudo_pass: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           65313438303839326333623331393165663166616464663566633637666230393738393262643331
@@ -9,5 +8,4 @@ ansible_sudo_pass: !vault |
           63366137326163653837326364313235386637656161633636333135386161316264663166343565
           3232363635306561370a303632366163346635363336363932626235363161306261386264303130
           3536
-version_for_fedora: "{{ fail2ban_ver_for_fedora }}"   # default_ver_for_fedora: fail2ban-1.0.2-12.fc39
 
