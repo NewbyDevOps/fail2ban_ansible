@@ -1,0 +1,18 @@
+[DEFAULT]
+bantime  = {{ bantime_d }}
+findtime = {{ findtime_d }}
+maxretry = {{ maxretry_d }}
+
+ignoreip = {{ ignoreip_d }}
+
+# Advanced parameters
+bantime.increment = {{ bantime_increment_d }}
+
+[sshd]
+enabled = {{ fail2ban_enabled_sshd }}
+
+[recidive]
+enabled = {{ enabled_recidive }}
+bantime = {{ bantime_recidive }}
+findtime = {{ findtime_recidive }}
+maxretry = {{ maxretry_recidive }}

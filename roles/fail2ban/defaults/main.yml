@@ -1,0 +1,18 @@
+---
+# defaults vars for fail2ban
+fail2ban_bantime_d: 50
+fail2ban_findtime_d: 30
+fail2ban_maxretry_d: 1
+fail2ban_ignoreip_d: 127.0.0.1
+fail2ban_bantime_increment_d: true
+
+fail2ban_enabled_sshd: true
+
+fail2ban_enabled_recidive: true
+fail2ban_bantime_recidive: -1
+fail2ban_findtime_recidive: 86400
+fail2ban_maxretry_recidive: 15
+
+#defaults vars for install
+fail2ban_ver_for_ubuntu: fail2ban=0.11.2-6
+fail2ban_ver_for_fedora: fail2ban-1.0.2-12.fc39

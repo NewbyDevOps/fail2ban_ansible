@@ -1,0 +1,14 @@
+---
+bantime_d: "{{ fail2ban_bantime_d }}"
+findtime_d: "{{ fail2ban_findtime_d }}"
+maxretry_d: "{{ fail2ban_maxretry_d }}"
+ignoreip_d: "{{ fail2ban_ignoreip_d }}"
+bantime_increment_d: "{{ fail2ban_bantime_increment_d }}"
+
+enabled_sshd: "{{ fail2ban_enable_sshd }}"
+
+enabled_recidive: "{{ fail2ban_enabled_recidive }}"
+bantime_recidive: "{{ fail2ban_bantime_recidive }}"
+findtime_recidive: "{{ fail2ban_findtime_recidive }}"
+maxretry_recidive: "{{ fail2ban_maxretry_recidive }}"
+

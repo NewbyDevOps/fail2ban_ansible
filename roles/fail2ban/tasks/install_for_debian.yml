@@ -1,0 +1,10 @@
+---
+# tasks file for installation file2ban to Debian based OS family
+
+- name: Install fail2ban for Ubuntu
+  become: yes
+  apt:
+    name: "{{ version_for_ubuntu }}"      # fail2ban=0.11.2-6
+    update_cache: yes
+  notify:
+    - Start and enable fail2ban service

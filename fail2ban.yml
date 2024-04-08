@@ -3,4 +3,4 @@
   hosts: all
 
   roles:
-    - deploy_fail2ban
+    - fail2ban

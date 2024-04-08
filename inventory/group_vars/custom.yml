@@ -1,0 +1,6 @@
+---
+staging_servers:
+  - owner: Vasia
+
+prod_servers:
+  -owner: Olga
